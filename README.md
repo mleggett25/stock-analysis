@@ -3,7 +3,7 @@
 ## Overview of Project
 
 ### Purpose
-The purpose of this data analysis was to analyze stock data to find the total daily volume and yearly return for each stock using refactored code in order to see which stocks performed best.
+The purpose of this data analysis was to analyze 2017 and 2018 stock data to find the total daily volume and yearly return for each stock using refactored code in order to see which stocks performed best.
 
 ## Results
 
@@ -128,4 +128,4 @@ The output from running the code for 2017 and 2018 produces these tables:
 
 ![All Stocks 2018](./Resources/All_Stocks_(2018).png)
 
-
+Based on the tables, we can see that stocks overall did significantly better in 2017 than they did in 2018. In 2017, the only stock with a negative return was TERP with -7.2%. In 2018, 10 of the 12 stocks had negative returns with only ENPH and RUN having positive returns. While it would be more beneficial to see data for more years, based on this data, I would recommend investments in ENPH and RUN as they were the only two stocks to have positive returns in both 2017 and 2018. Interestingly, RUN, which had a return of 5.5% in 2017, increased their return by a little more than 16 times with a return in 2018 of 84%.
