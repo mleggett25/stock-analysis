@@ -40,3 +40,10 @@ tickers(9) = "SPWR"
 tickers(10) = "TERP"
 tickers(11) = "VSLR"
 ```
+I refactored the code to create a tickerIndex variable to access the correct index across four arrays: the ticker (as established above), tickerVolumes, tickerStartingPrices, and tickerEndingPrices.
+```
+tickerIndex = 0
+Dim tickerVolumes(12) As Long
+Dim tickerStartingPrices(12) As Single
+Dim tickerEndingPrices(12) As Single
+```
