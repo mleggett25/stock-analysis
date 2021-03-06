@@ -157,6 +157,18 @@ The refactored script timers were as follows:
 
 ![Refactored Script (2018)](./Resources/VBA_Challenge_2018.PNG)
 
-We can see from the timers that for both 2017 and 2018, the refactored script decreased the execution times by about half a second.
+We can see from the timers that for both 2017 and 2018, the refactored script decreased the execution times by a little more than half a second.
+
+## Summary of Analysis
+
+### Advantages and Disadvantages of Refactoring Code
+Refactoring code does not add new functionality or features, but it can make the overall code more efficient.
+Advantages of refactoring code include:
+- helping to find bugs in the code;
+- making the code simpler and easier to understand;
+- reducing the execution time.
+While refactoring code can be beneficial, it may not always be useful.
+Disadvantages of refactoring code include:
+-
 
 
