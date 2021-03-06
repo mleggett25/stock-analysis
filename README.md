@@ -149,6 +149,6 @@ The original script timers were as follows:
 
 ![Original Script (2017)](./Resources/Original_Script_(2017).PNG)
 
-![Original Script 2018](./Resources/All_Stocks_Analysis_2018.png)
+![Original Script (2018)](./Resources/Orignal_Script_(2018).PNG)
 
 
