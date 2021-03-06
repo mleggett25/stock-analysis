@@ -8,7 +8,7 @@ The purpose of this data analysis was to analyze 2017 and 2018 stock data to fin
 ## Results
 
 ### Stock Performance between 2017 and 2018
-The code that was given created an InputBox that would run and analysis on the stock based on the year inputted by the user.
+The code that was given created an InputBox that would run an analysis on the stock based on the year inputted by the user.
 ```
 yearValue = InputBox("What year would you like to run the analysis on?")
 ```
