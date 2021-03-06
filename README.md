@@ -128,7 +128,7 @@ The output from running the code for 2017 and 2018 produces these tables:
 
 ![All Stocks 2018](./Resources/All_Stocks_(2018).png)
 
-Based on the tables, we can see that stocks overall did significantly better in 2017 than they did in 2018. In 2017, the only stock with a negative return was TERP with -7.2%. In 2018, 10 of the 12 stocks had negative returns with only ENPH and RUN having positive returns. While it would be more beneficial to see data for more years, based on this data, I would recommend investments in ENPH and RUN as they were the only two stocks to have positive returns in both 2017 and 2018. Interestingly, RUN, which had a return of 5.5% in 2017, increased their return by a little more than 16 times with a return in 2018 of 84%.
+Based on the tables, we can see that stocks overall did significantly better in 2017 than they did in 2018. In 2017, the only stock with a negative return was TERP with -7.2%. In 2018, 10 of the 12 stocks had negative returns with only ENPH and RUN having positive returns. While there is not enough data to draw a conclusive recommendation on what to invest in, based on this data ENPH and RUN certainly seem like potential candidates to look into further as they were the only two stocks to have positive returns in both 2017 and 2018. Interestingly, RUN, which had a return of 5.5% in 2017, increased their return by a little more than 16 times with a return in 2018 of 84%.
 
 ### Comparison of Original Script and Refactored Script
 To calcuate the execution times of the scripts, both the original and refactored scripts begin with creating start time and end time variables as single data types where the timer starts after the user inputs the year they would like to run the analysis on.
@@ -178,8 +178,9 @@ Disadvantages of refactoring code include:
 - potentially being time consuming and therefore costly;
 - accidentally introducing bugs into the code.
 
-### Advantages and Disadvantagesof the Original and Refactored VBA Script
+### Advantages and Disadvantages of the Original and Refactored VBA Script
 
+In terms of this data analysis and the comparison between the original and refactored VBA script, there were many clear advantages of the refactoring. Based on the script timers, we can see that the refactored script decreased the execution times by a little more than half a second. While this does not seem like a lot, this is an 85% decrease in execution times between the 2017 scripts and a 76% decrease in execution times between the 2018 scripts. We can clearly see the benefits this would have for much larger data sets and data analysis. I do not believe there were any disadvantages to refactoring this code due to the size of this data analysis, as it was not particularly time consuming and the risk of introducing bugs was low.
 
 
 
