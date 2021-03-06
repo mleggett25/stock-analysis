@@ -8,7 +8,7 @@ The purpose of this data analysis was to analyze 2017 and 2018 stock data to fin
 ## Results
 
 ### Stock Performance between 2017 and 2018
-The code that was given created an InputBox that would run an analysis on the stock based on the year inputted by the user.
+The original script that was given created an InputBox that would run an analysis on the stock based on the year inputted by the user.
 ```
 yearValue = InputBox("What year would you like to run the analysis on?")
 ```
@@ -96,7 +96,7 @@ For i = 0 To 11
         
 Next i
 ```
-The existing code further formatted the table by bolding the headers and adding a bottom border; formatting the numbers in columns B and C with commas and percentages respectively, and autofitting column B. The for loop then loops through the data to determine if the percentages in the Return column are greater than zero, make the cell color green. If it is not greater than zero, it makes the cell red.
+The original script further formatted the table by bolding the headers and adding a bottom border; formatting the numbers in columns B and C with commas and percentages respectively, and autofitting column B. The for loop then loops through the data to determine if the percentages in the Return column are greater than zero, make the cell color green. If it is not greater than zero, it makes the cell red.
 ```
 Worksheets("All Stocks Analysis").Activate
 Range("A3:C3").Font.FontStyle = "Bold"
