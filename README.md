@@ -147,7 +147,7 @@ MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & 
 ```
 The original script timers were as follows:
 
-![All Stocks 2017](./Resources/All_Stocks_Analysis_2017.png)
+![All Stocks Analysis 2017](./Resources/All_Stocks_Analysis_2017.png)
 
 ![Original Script 2018](./Resources/All_Stocks_Analysis_2018.png)
 
