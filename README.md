@@ -83,3 +83,14 @@ I then created a loop over all the rows. Within the loop, the volume of the curr
     
     Next i
 ```
+Finally, I created a for loop through the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays to output the "Ticker," "Total Daily Volume," and "Return" columns.
+```
+For i = 0 To 11
+        
+    Worksheets("All Stocks Analysis").Activate
+    Cells(4 + i, 1).Value = tickers(i)
+    Cells(4 + i, 2).Value = tickerVolumes(i)
+    Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
+        
+Next i
+```
