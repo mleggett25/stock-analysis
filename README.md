@@ -8,8 +8,35 @@ The purpose of this data analysis was to analyze stock data to find the total da
 ## Results
 
 ### Stock Performance between 2017 and 2018
-Using the code below in VBA, I was able to create an InputBox that would run and analysis on the stock based on the year inputted by the user.
+The code that was given created an InputBox that would run and analysis on the stock based on the year inputted by the user.
 ```
 yearValue = InputBox("What year would you like to run the analysis on?")
 ```
-
+The code then formatted the output by:
+- having the value in cell A1 say "All Stocks (year inputted by the user)";
+```
+Range("A1").Value = "All Stocks (" + yearValue + ")"
+```
+- creating the header rows with "Ticker", "Total Daily Volume", and "Return";
+```
+Cells(3, 1).Value = "Ticker"
+Cells(3, 2).Value = "Total Daily Volume"
+Cells(3, 3).Value = "Return"
+```
+- and initializing an array of the tickers.
+```
+Dim tickers(12) As String
+    
+tickers(0) = "AY"
+tickers(1) = "CSIQ"
+tickers(2) = "DQ"
+tickers(3) = "ENPH"
+tickers(4) = "FSLR"
+tickers(5) = "HASI"
+tickers(6) = "JKS"
+tickers(7) = "RUN"
+tickers(8) = "SEDG"
+tickers(9) = "SPWR"
+tickers(10) = "TERP"
+tickers(11) = "VSLR"
+```
