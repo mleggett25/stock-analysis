@@ -3,7 +3,7 @@
 ## Overview of Project
 
 ### Purpose
-The purpose of this data analysis was to analyze stock data to find the total daily volume and yearly return for each stock using refactored code.
+The purpose of this data analysis was to analyze stock data to find the total daily volume and yearly return for each stock using refactored code in order to see which stocks performed best.
 
 ## Results
 
@@ -46,4 +46,40 @@ tickerIndex = 0
 Dim tickerVolumes(12) As Long
 Dim tickerStartingPrices(12) As Single
 Dim tickerEndingPrices(12) As Single
+```
+I created a for loop to initialize the tickerVolumes array to zero.
+```
+For i = 0 To 11
+    tickerVolumes(i) = 0
+Next i
+```
+I then created a loop over all the rows. Within the loop, the volume of the current tickerVolumes is increased with the tickerIndex variable as the index. The if-then statements check if the current row is the first row or the last row with the selected tickerIndex. If the current row is the first row, it is assigned the current closing price to the tickerStartingPrices variable. If the current row is the last row, it is assigned the current closing price to the tickerEndingPrices variable. The tickerIndex is then increased if the next row's ticker does not match the previous row's ticker.
+```
+    '2b) Loop over all the rows in the spreadsheet.
+    For i = 2 To RowCount
+    
+        '3a) Increase volume for current ticker
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        
+        
+        '3b) Check if the current row is the first row with the selected tickerIndex.
+         If Cells(i - 1, 1) <> Cells(i, 1) Then
+            
+                tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+            
+        End If
+        
+        '3c) check if the current row is the last row with the selected ticker
+         If Cells(i + 1, 1) <> Cells(i, 1) Then
+            
+                tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+                
+           
+                '3d Increase the tickerIndex.
+                tickerIndex = 1 + tickerIndex
+            
+            
+        End If
+    
+    Next i
 ```
