@@ -50,7 +50,9 @@ Dim tickerEndingPrices(12) As Single
 I created a for loop to initialize the tickerVolumes array to zero.
 ```
 For i = 0 To 11
+
     tickerVolumes(i) = 0
+    
 Next i
 ```
 I then created a loop over all the rows. Within the loop, the volume of the current tickerVolumes is increased with the tickerIndex variable as the index. The if-then statements check if the current row is the first row or the last row with the selected tickerIndex. If the current row is the first row, it is assigned the current closing price to the tickerStartingPrices variable. If the current row is the last row, it is assigned the current closing price to the tickerEndingPrices variable. The tickerIndex is then increased if the next row's ticker does not match the previous row's ticker.
@@ -91,6 +93,32 @@ For i = 0 To 11
     Cells(4 + i, 1).Value = tickers(i)
     Cells(4 + i, 2).Value = tickerVolumes(i)
     Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
+        
+Next i
+```
+The existing code further formatted the table by bolding the headers and adding a bottom border; formatting the numbers in columns B and C with commas and percentages respectively, and autofitting column B. The for loop then loops through the data to determine if the percentages in the Return column are greater than zero, make the cell color green. If it is not greater than zero, it makes the cell red.
+```
+Worksheets("All Stocks Analysis").Activate
+Range("A3:C3").Font.FontStyle = "Bold"
+Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
+Range("B4:B15").NumberFormat = "#,##0"
+Range("C4:C15").NumberFormat = "0.0%"
+Columns("B").AutoFit
+
+dataRowStart = 4
+dataRowEnd = 15
+
+For i = dataRowStart To dataRowEnd
+        
+    If Cells(i, 3) > 0 Then
+            
+        Cells(i, 3).Interior.Color = vbGreen
+            
+    Else
+        
+        Cells(i, 3).Interior.Color = vbRed
+            
+    End If
         
 Next i
 ```
