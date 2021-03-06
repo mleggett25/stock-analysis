@@ -122,3 +122,5 @@ For i = dataRowStart To dataRowEnd
         
 Next i
 ```
+The output from running the code for 2017 and 2018 produces these tables:
+![All Stocks 2017](./Resources/All Stocks 2017.png)
