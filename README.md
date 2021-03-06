@@ -129,3 +129,20 @@ The output from running the code for 2017 and 2018 produces these tables:
 ![All Stocks 2018](./Resources/All_Stocks_(2018).png)
 
 Based on the tables, we can see that stocks overall did significantly better in 2017 than they did in 2018. In 2017, the only stock with a negative return was TERP with -7.2%. In 2018, 10 of the 12 stocks had negative returns with only ENPH and RUN having positive returns. While it would be more beneficial to see data for more years, based on this data, I would recommend investments in ENPH and RUN as they were the only two stocks to have positive returns in both 2017 and 2018. Interestingly, RUN, which had a return of 5.5% in 2017, increased their return by a little more than 16 times with a return in 2018 of 84%.
+
+### Comparison of Original Script and Refactored Script
+To calcuate the execution times of the scripts, both the original and refactored scripts begin with creating start time and end time variables as single data types where the timer starts after the user inputs the year they would like to run the analysis on.
+```
+Dim startTime As Single
+Dim endTime  As Single
+
+yearValue = InputBox("What year would you like to run the analysis on?")
+
+startTime = Timer
+```
+The timer then ends at the very end of the script and displays a message box saying how long the code ran in the given year.
+```
+endTime = Timer
+MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+```
+
