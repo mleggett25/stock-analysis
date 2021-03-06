@@ -145,4 +145,5 @@ The timer then ends at the very end of the script and displays a message box say
 endTime = Timer
 MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 ```
+The original script timers were as follows:
 
