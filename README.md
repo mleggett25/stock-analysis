@@ -149,6 +149,14 @@ The original script timers were as follows:
 
 ![Original Script (2017)](./Resources/Original_Script_(2017).PNG)
 
-![Original Script (2018)](./Resources/Orignal_Script_(2018).PNG)
+![Original Script (2018)](./Resources/Original_Script_(2018).PNG)
+
+The refactored script timers were as follows:
+
+![Refactored Script (2017)](./Resources/VBA_Challenge_2017.png)
+
+![Refactored Script (2018)](./Resources/VBA_Challenge_2018.png)
+
+
 
 
