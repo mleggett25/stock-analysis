@@ -40,6 +40,11 @@ tickers(9) = "SPWR"
 tickers(10) = "TERP"
 tickers(11) = "VSLR"
 ```
+The code then gets the number of rows to loop over.
+```
+RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+```
+
 I refactored the code to create a tickerIndex variable to access the correct index across four arrays: the ticker (as established above), tickerVolumes, tickerStartingPrices, and tickerEndingPrices.
 ```
 tickerIndex = 0
